@@ -1,4 +1,6 @@
 /* Credit and Thanks:
+WEB, Sara Mazal. 
+Estrutura de Site Web CSS 
 Matrix - Particles.js;
 SliderJS - Ettrics;
 Fonts - Google Fonts

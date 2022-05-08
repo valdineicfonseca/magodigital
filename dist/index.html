@@ -58,9 +58,9 @@
       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a  class="nav-link link-cabecalho"  href="#seo">
+            <a class="nav-link link-cabecalho" href="#seo">
               SEO
-              </a>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link link-cabecalho" href="#ia" data-toggle="collapse" data-target=".navbar-collapse.show">
@@ -84,11 +84,11 @@
   </div>
 
 
-  
+
   <section class="nav">
 
-    
-    
+
+
 
 
 
@@ -149,12 +149,18 @@
       <h2>Captação de público com rastreamento, direcionada para ponteciais clientes</h2>
     </section>
     <section class="slider" id="contato">
-      <h1>Contato</h1>
+      <h1>Quer uma consultoria grátis? Digite seu e-mail</h1>
       <h2>
+        <form onsubmit="return false">
+          <input id="emailcad" name="emailcadastrar" type="email" maxlength="30" placeholder="Digite seu melhor e-mail"><br>
+          <button id="btn_enviar" onclick="pegaEmail()">Enviar</button>
+        </form>
+        <!--
         <a href="https://api.whatsapp.com/send?phone=5533998319563&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20minhas%20vendas%2C%20de%20produtos%20ou%20servi%C3%A7os."
           title="Clique aqui para entrar em contato">
           (33) 99831-9563
-        </a>
+        </a>-->
+
       </h2>
     </section>
     <div class="footer_page">
@@ -164,13 +170,30 @@
   </main>
   <canvas class="background">
 
-   
+
 
   </canvas>
 </body>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 <script src="./script.js"></script>
+
+<script>
+  function pegaEmail() {
+    let emailcad = document.getElementById("emailcad")
+    console.log(emailcad.value)
+    let reg =  /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+
+    if (reg.test(emailcad.value) && emailcad.value!= "" ){
+    location.href = "http://127.0.0.1:81/verifica/"+emailcad.value
+    } else {
+      alert("Formato de e-mail invaldio.")
+    }
+  }
+</script>
+
+
+
 
 </body>
 

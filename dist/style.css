@@ -1,3 +1,10 @@
+/* Credit and Thanks:
+WEB, Sara Mazal. 
+Estrutura de Site Web CSS 
+Matrix - Particles.js;
+SliderJS - Ettrics;
+Fonts - Google Fonts */
+
 * {
   margin: 0;
   padding: 0;
@@ -287,4 +294,32 @@ a {
   padding-left: 10px;
   text-align: center;
 
+}
+
+#btn_enviar{
+  margin-top: 10px;
+  width: 480px;
+  height: 50px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #03dac6;
+  font-size: 25px;
+
+  
+}
+
+#btn_enviar:hover{
+  background-color: #ff0266;
+  font-size: 28px;
+  color: #ffff;
+}
+
+#emailcad {
+  font-size: 28px;
+  padding-left: 10px;
+  margin-top: 10px;
+  width: 480px;
+  height: 50px;
+  border-radius: 10px;
+  
 }
